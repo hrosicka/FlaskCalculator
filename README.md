@@ -1,5 +1,12 @@
 # Simple Web Calculator with Flask
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Language](https://img.shields.io/badge/language-Python-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/hrosicka/FlaskCalculator.svg?style=social&label=Star)
+![GitHub issues](https://img.shields.io/github/issues/hrosicka/FlaskCalculator)
+![Repo size](https://img.shields.io/github/repo-size/hrosicka/FlaskCalculator)
+![Last Commit](https://img.shields.io/github/last-commit/hrosicka/FlaskCalculator)
+
 - This repository contains a clean and user-friendly web calculator built with Flask, HTML, and CSS. 
 - It's designed to be simple to use while providing a modern and intuitive interface.
 
