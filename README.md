@@ -93,6 +93,10 @@ The API will return a JSON response with the result of the calculation as a stri
 
 Unit tests are included to verify the functionality of the Calculator class and the validate_input function.
 
+## Author
+
+Lovingly crafted by [Hanka Robovska](https://github.com/hrosicka)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
