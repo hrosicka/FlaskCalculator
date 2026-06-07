@@ -1,11 +1,30 @@
 # Simple Web Calculator with Flask
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Language](https://img.shields.io/badge/language-Python-blue.svg)
-![GitHub stars](https://img.shields.io/github/stars/hrosicka/FlaskCalculator.svg?style=social&label=Star)
-![GitHub issues](https://img.shields.io/github/issues/hrosicka/FlaskCalculator)
-![Repo size](https://img.shields.io/github/repo-size/hrosicka/FlaskCalculator)
-![Last Commit](https://img.shields.io/github/last-commit/hrosicka/FlaskCalculator)
+<p align="left">
+  <a href="https://github.com/hrosicka/FlaskCalculator/stargazers">
+    <img src="https://img.shields.io/github/stars/hrosicka/FlaskCalculator?style=for-the-badge&color=8AB4F8&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/hrosicka/FlaskCalculator/issues">
+    <img src="https://img.shields.io/github/issues/hrosicka/FlaskCalculator?style=for-the-badge&color=8AB4F8&logo=github" alt="Issues">
+  </a>
+  <img src="https://img.shields.io/github/repo-size/hrosicka/FlaskCalculator?style=for-the-badge&color=8AB4F8" alt="Repo Size">
+  <a href="https://github.com/hrosicka/FlaskCalculator/commits/main">
+    <img src="https://img.shields.io/github/last-commit/hrosicka/FlaskCalculator?style=for-the-badge&color=8AB4F8&logo=github" alt="Last Commit">
+  </a>
+  <br>
+  
+  <a href="https://flask.palletsprojects.com/">
+    <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  </a>
+  <img src="https://img.shields.io/badge/API-Swagger_Doc-85EA2D?style=for-the-badge&logo=swagger" alt="Swagger API">
+  <img src="https://img.shields.io/badge/Tests-unittest-FFE873?style=for-the-badge&logo=python&logoColor=3776AB" alt="Unit Tests">
+  
+  <br>
+  
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-34A853?style=for-the-badge&logo=opensourceinitiative" alt="License">
+  </a>
+</p>
 
 - This repository contains a clean and user-friendly web calculator built with Flask, HTML, and CSS. 
 - It's designed to be simple to use while providing a modern and intuitive interface.
