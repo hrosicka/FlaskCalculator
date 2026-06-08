@@ -18,14 +18,11 @@
   </a>
   <img src="https://img.shields.io/badge/API-Swagger_Doc-85EA2D?style=for-the-badge&logo=swagger" alt="Swagger API">
   <img src="https://img.shields.io/badge/Tests-unittest-FFE873?style=for-the-badge&logo=python&logoColor=3776AB" alt="Unit Tests">
-  
   <br>
-  
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-34A853?style=for-the-badge&logo=opensourceinitiative" alt="License">
   </a>
 </p>
-
 - This repository contains a clean and user-friendly web calculator built with Flask, HTML, and CSS. 
 - It's designed to be simple to use while providing a modern and intuitive interface.
 
