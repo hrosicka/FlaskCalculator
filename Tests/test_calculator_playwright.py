@@ -3,10 +3,11 @@
 #         Performs the calculation based on the initialized numbers and operation.
 #         pytest --snapshot-update
 #         """
-import pytest           
+import pytest
 from playwright.sync_api import Page, expect
 
 BASE_URL = "http://127.0.0.1:5000"
+
 
 def test_addition(page: Page):
     page.goto(BASE_URL)
@@ -17,6 +18,7 @@ def test_addition(page: Page):
     result = page.locator(".result-box p")
     expect(result).to_have_text("8")
 
+
 def test_subtraction(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "10")
@@ -25,6 +27,7 @@ def test_subtraction(page: Page):
     page.click("input[type='submit']")
     result = page.locator(".result-box p")
     expect(result).to_have_text("6")
+
 
 def test_multiplication(page: Page):
     page.goto(BASE_URL)
@@ -35,6 +38,7 @@ def test_multiplication(page: Page):
     result = page.locator(".result-box p")
     expect(result).to_have_text("42")
 
+
 def test_division(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "15")
@@ -43,6 +47,7 @@ def test_division(page: Page):
     page.click("input[type='submit']")
     result = page.locator(".result-box p")
     expect(result).to_have_text("5")
+
 
 def test_division_by_zero(page: Page):
     page.goto(BASE_URL)
@@ -53,6 +58,7 @@ def test_division_by_zero(page: Page):
     error = page.locator(".result-box p")
     expect(error).to_have_text("Division by zero is not allowed.")
 
+
 def test_decimal_numbers_addition(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "2.5")
@@ -61,6 +67,7 @@ def test_decimal_numbers_addition(page: Page):
     page.click("input[type='submit']")
     result = page.locator(".result-box p")
     expect(result).to_have_text("4.0")
+
 
 def test_negative_numbers_subtraction(page: Page):
     page.goto(BASE_URL)
@@ -71,6 +78,7 @@ def test_negative_numbers_subtraction(page: Page):
     result = page.locator(".result-box p")
     expect(result).to_have_text("-3")
 
+
 def test_large_numbers_multiplication(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "1000000")
@@ -79,6 +87,7 @@ def test_large_numbers_multiplication(page: Page):
     page.click("input[type='submit']")
     result = page.locator(".result-box p")
     expect(result).to_have_text("2000000000")
+
 
 def test_decimal_and_negative_multiplication(page: Page):
     page.goto(BASE_URL)
@@ -89,6 +98,7 @@ def test_decimal_and_negative_multiplication(page: Page):
     result = page.locator(".result-box p")
     expect(result).to_have_text("-6.28")
 
+
 def test_decimal_division(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "7.5")
@@ -98,6 +108,7 @@ def test_decimal_division(page: Page):
     result = page.locator(".result-box p")
     expect(result).to_have_text("3")
 
+
 def test_empty_first_number(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "")
@@ -105,6 +116,7 @@ def test_empty_first_number(page: Page):
     page.click("input[type='submit']")
     error = page.locator(".result-box p")
     expect(error).to_have_text("Invalid input. Please enter valid numbers.")
+
 
 def test_empty_second_number(page: Page):
     page.goto(BASE_URL)
@@ -114,6 +126,7 @@ def test_empty_second_number(page: Page):
     error = page.locator(".result-box p")
     expect(error).to_have_text("Invalid input. Please enter valid numbers.")
 
+
 def test_both_numbers_empty(page: Page):
     page.goto(BASE_URL)
     page.fill("#num1", "")
@@ -121,6 +134,7 @@ def test_both_numbers_empty(page: Page):
     page.click("input[type='submit']")
     error = page.locator(".result-box p")
     expect(error).to_have_text("Invalid input. Please enter valid numbers.")
+
 
 def test_decimal_input_whole_number_result_addition(page: Page):
     page.goto(BASE_URL)
@@ -130,6 +144,7 @@ def test_decimal_input_whole_number_result_addition(page: Page):
     page.click("input[type='submit']")
     result = page.locator(".result-box p")
     expect(result).to_have_text("5.0")
+
 
 def test_calculator_layout(page: Page, snapshot):
     page.goto(BASE_URL)
